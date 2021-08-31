@@ -1,0 +1,29 @@
+spring:
+  # 配置数据库
+  datasource:
+    # 数据库必备四件套
+    password: root
+    username: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mhl?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+
+  # 创建数据库的方式类型
+  jpa:
+    hibernate:
+      ddl-auto: update
+    # 显示sql语句
+    show-sql: true
+
+  # 配置邮件发送
+  mail:
+    # 发件人邮箱
+    username: 1368829476@qq.com
+    # 生成的授权码
+    password: pdtishetqoyghdib
+    # QQ的SMIP地址
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
